@@ -1,5 +1,12 @@
 # Visualizador de Árbol AVL (Tkinter)
 
+Proyecto hecho por 
+-Gil Justina
+-Aparicio Tomas
+-Schneider Jeremias
+-Pidoux Felipe
+-Demarchis Facundo
+
 Aplicación de escritorio en Python para visualizar paso a paso la construcción de un Árbol AVL durante inserciones. Permite elegir secuencias predefinidas o ingresar una secuencia personalizada, navegar por cada paso, ver el árbol dibujado y consultar información detallada (rotaciones, árbol en ASCII, recorrido en-orden y factores de balance).
 
 > Repositorio remoto: [felip3-14/ArbolAVL](https://github.com/felip3-14/ArbolAVL)
