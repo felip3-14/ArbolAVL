@@ -8,15 +8,17 @@ Aplicación de escritorio en Python para visualizar paso a paso la construcción
 
 ## Características
 
-- Visualización interactiva de inserciones en Árbol AVL.
-- Secuencias predefinidas y soporte de secuencias personalizadas.
-- Navegación por pasos: Anterior / Siguiente / Reiniciar.
-- Dibujo del árbol en un `Canvas` con scroll.
-- Panel informativo con:
-  - Operaciones realizadas (rotaciones, etc.).
-  - Árbol en ASCII.
+- **Visualización paso a paso**: Navega por cada inserción para entender el proceso de balanceado.
+- **10 secuencias predefinidas**: Casos educativos desde básicos hasta complejos.
+- **Secuencias personalizadas**: Experimenta con tus propios datos.
+- **Navegación interactiva**: Anterior / Siguiente / Reiniciar para estudiar a tu ritmo.
+- **Visualización gráfica**: Dibujo del árbol en `Canvas` con scroll automático.
+- **Panel informativo detallado**:
+  - Operaciones realizadas (rotaciones LL, LR, RR, RL).
+  - Representación ASCII del árbol.
   - Recorrido en-orden.
-  - Altura y factor de balance (FB) por nodo.
+  - Altura y factor de balance por nodo.
+  - Estado de balance (✓ Balanceado / ⚠ Desbalanceado).
 
 ## Requisitos
 
@@ -79,16 +81,18 @@ Notas:
 
 ## Secuencias predefinidas
 
-- Secuencia Original: `[10, 20, 30, 40, 50, 25]`
-- Números Aleatorios: `[15, 8, 22, 4, 12, 18, 25, 2, 6, 10, 14, 20, 24, 1, 3, 5, 7, 9, 11, 13]`
-- Secuencia Creciente: `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
-- Secuencia Decreciente: `[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]`
-- Fibonacci: `[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]`
-- Potencias de 2: `[1, 2, 4, 8, 16, 32, 64, 128]`
-- Números Primos: `[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`
-- Secuencia Mixta: `[50, 25, 75, 12, 37, 62, 87, 6, 18, 31, 43, 56, 68, 81, 93]`
-- Secuencia Pequeña: `[5, 3, 7, 1, 4, 6, 8]`
-- Secuencia Balanceada: `[8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15]`
+Cada secuencia está diseñada para enseñar aspectos específicos de los árboles AVL:
+
+- **Secuencia Original**: `[10, 20, 30, 40, 50, 25]` - Básica con rotaciones RR y RL
+- **Números Aleatorios**: `[15, 8, 22, 4, 12, 18, 25, 2, 6, 10, 14, 20, 24, 1, 3, 5, 7, 9, 11, 13]` - Secuencia larga con múltiples rebalanceos
+- **Secuencia Creciente**: `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` - Caso extremo: solo rotaciones RR
+- **Secuencia Decreciente**: `[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]` - Caso extremo: solo rotaciones LL  
+- **Fibonacci**: `[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]` - Secuencia matemática famosa
+- **Potencias de 2**: `[1, 2, 4, 8, 16, 32, 64, 128]` - Crecimiento exponencial
+- **Números Primos**: `[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]` - Distribución irregular
+- **Secuencia Mixta**: `[50, 25, 75, 12, 37, 62, 87, 6, 18, 31, 43, 56, 68, 81, 93]` - Rotaciones complejas
+- **Secuencia Pequeña**: `[5, 3, 7, 1, 4, 6, 8]` - Ideal para pruebas rápidas
+- **Secuencia Balanceada**: `[8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15]` - Árbol perfectamente balanceado
 
 ## Solución de problemas
 
@@ -120,6 +124,25 @@ git push -u origin main
 ```
 
 Si el remoto requiere autenticación, inicia sesión con GitHub CLI o configura tus credenciales.
+
+## Casos de uso educativos
+
+Esta herramienta es ideal para:
+
+- **Estudiantes de estructuras de datos**: Visualizar cómo funcionan las rotaciones AVL
+- **Profesores**: Demostrar el algoritmo paso a paso en clase
+- **Desarrolladores**: Depurar implementaciones de árboles AVL
+- **Investigadores**: Analizar comportamiento con diferentes patrones de datos
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Algunas mejoras posibles:
+
+- Soporte para eliminación de nodos
+- Animaciones entre pasos
+- Exportar visualizaciones como imagen
+- Comparación con otros tipos de árboles (BST, Red-Black)
+- Métricas de rendimiento (comparaciones, rotaciones)
 
 ## Licencia
 
